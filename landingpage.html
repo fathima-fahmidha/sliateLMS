@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EDU+ Academy - Learning Management System</title>
+  <link rel="shortcut icon" href="sliate.jfif" type="image/x-icon">
+  <style>
+    /* Global styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    /* Navbar styles */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 5%;
+      background-color: #2c3e50;
+      color: white;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar h2 {
+      font-size: 1.8rem;
+      color: #ecf0f1;
+    }
+
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      align-items: center;
+    }
+
+    .navbar ul li {
+      margin: 0 0.5rem;
+    }
+
+    .navbar ul a {
+      text-decoration: none;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      transition: all 0.3s ease;
+    }
+
+    .navbar ul a:hover {
+      background-color: #000000;
+    }
+
+    .register-btn {
+      background-color: blue;
+    }
+
+    .login-select {
+      padding: 0.5rem 1rem;
+      border-radius: 4px;
+      border: none;
+      font-size: 1rem;
+      background-color:blue;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-select:hover {
+      background-color: #000000;
+    }
+
+    /* Header */
+    .header {
+      width: 100%;
+      height: 80vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .header img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .header-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    .header-content h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .header-content p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 2rem;
+      background-color: blue;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+      margin: 0 0.5rem;
+    }
+
+    .btn:hover {
+      background-color: #000;
+    }
+
+    .btn-primary {
+      background-color:blue;
+    }
+
+    .btn-secondary {
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar with dropdown -->
+  <div class="navbar">
+    <h2>SLIATE LMS</h2>
+    <ul>
+      <li>
+        <select class="login-select" id="loginSelect" onchange="handleLogin()">
+          <option selected disabled>Register As</option>
+          <option value="stdregister.html">Student</option>
+          <option value="tutregister.html">Tutor</option>
+        </select>
+      </li>
+      <li><a href="Login.html" class="register-btn">Login</a></li>
+    </ul>
+  </div>
+
+  <!-- Header section -->
+  <div class="header">
+    <img src="images/sd2.jpg" alt="ATI Campus Image">
+    <div class="header-content">
+      <h1>SLIATE LMS</h1>
+      <p>Your gateway to seamless learning and academic excellence</p>
+      <div>
+        <a href="stdregister.html" class="btn btn-primary">Register</a>
+        <a href="login.html" class="btn btn-secondary">Login</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- JS redirection -->
+  <script>
+    function handleLogin() {
+      const selected = document.getElementById('loginSelect').value;
+      if (selected) {
+        window.location.href = selected;
+      }
+    }
+  </script>
+</body>
+</html>

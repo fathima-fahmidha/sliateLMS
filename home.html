@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="shortcut icon" href="sliate.jfif" type="image/x-icon">
+    <!----FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+     <!--CSS-->
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!---header section start-->
+    <header class="header">
+      <section class="flex">
+        <a href="home.html" class="logo">SLIATE LMS</a>
+        <form action="post" class="search-form">
+          <input type="text" name="search_box" placeholder="search courses...." required maxlength="100">
+          <button type="submit" class="fas fa-search" name="search_box"></button>
+        </form>
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
+
+        </div>
+        <div class="profile">
+          <img src="admin1.jfif" alt="user profile">
+          <h3>Fathima Fahmidha</h3>
+          <span>student</span>
+          <a href="prfile.html" class="btn">view profile</a>
+          <div class="flex-btn">
+            <a href="login.html" class="option-btn">Login</a>
+            <a href="stdregister.html" class="option-btn">Register</a>
+          </div> 
+        </div>
+      </section>
+    </header>
+    <!---header section closed-->
+
+    <!---side bar section start-->
+    <div class="side-bar">
+      <div class="close-side-bar">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="profile">
+        <img src="admin1.jfif" alt="user profile">
+        <h3>Fathima Fahmidha</h3>
+        <span>Student</span>
+        <a href="profile.html" class="btn">View profile</a>
+      </div>
+      <nav class="navbar">
+        <a href="home.html"><i class="fas fa-home"><span>Home</span></i></a>
+        <a href="about.html"><i class="fas fa-question"><span>About us</span></i></a>
+        <a href="courses.html"><i class="fas fa-graduation-cap"><span>Courses</span></i></a>
+        <a href="1sty+time+res.html"><i class="fas fa-question"><span>Time table + Results</span></i></a>
+        <a href="teachers.html"><i class="fas fa-chalkboard-user"><span>Teachers</span></i></a>
+        <a href="contact.html"><i class="fas fa-headset"><span>Contact us</span></i></a>
+      </nav>
+
+    </div>
+    <!---side bar section ends-->
+    <!---quick select section starts-->
+    <section class="quick-select">
+      <h1 class="heading">quick option</h1>
+      <div class="box-container">
+        <div class="box">
+          <h3 class="title">likes and comment</h3>
+          <p>total likes : <span>14</span></p>
+          <a href="#" class="inline-btn">view likes</a>
+          <p>total comments : <span>11</span></p>
+          <a href="#" class="inline-btn">view comments</a>
+          <p>saved playlists : <span>7</span></p>
+          <a href="#" class="inline-btn">view playlists</a>
+        </div>
+
+        <div class="box">
+          <h3 class="title">categories</h3>
+         <div class="flex">
+          <a href="#courses-1sty-1stsem"><i class="fas fa-code"><span> 1st Year 1st Semester</span></i></a>
+          <a href="#courses-1sty-2ndsem"><i class="fas fa-chart-simple"><span>1st Year 2nd Semester</span></i></a>
+          <a href="#courses-2ndy-1stsem"><i class="fas fa-pen"><span>2nd Year 1st Semester</span></i></a>
+          <a href="#courses-2ndy-2ndsem"><i class="fas fa-code"><span>2nd Year 2nd Semester</span></i></a>
+         </div>
+        </div>
+
+        <div class="box tutor">
+          <h3 class="title">become a tutor</h3>
+         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias rem sit iure perferendis, neque facilis!</p>
+          <a href="register.html" class="inline-btn">get started</a>
+        </div>
+      </div>
+    </section>
+    <!--quick section ends-->
+<!--courses section starts-->
+    <section class="courses" id="courses-1sty-1stsem">
+      <h1 class="heading">1st Year 1st Semester</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.A.D.K.Fernando</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/OIP.jfif" class="thumb">
+          <h3 class="title">Visual Application <br> programming</h3>
+          <a href="VB.html" class="inline-btn">view playist</a>
+        </div>
+
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>Mrs.Wikramasinghe</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/img19.jpeg" class="thumb">
+          <h3 class="title">Web <br> Designing</h3>
+          <a href="wd.html" class="inline-btn">view playlist</a>
+        </div>
+
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>Mrs.Dharmawardhana</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/network2.jpg" class="thumb">
+          <h3 class="title">Network & Computer System</h3>
+          <a href="Comnet.html" class="inline-btn">view playlist</a>
+        </div>
+
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>johndoe</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/imis1.jpg" class="thumb">
+          <h3 class="title">Information Management & Information System</h3>
+          <a href="IMIS.html" class="inline-btn">view playlist</a>
+        </div>
+
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>johndoe</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/comskil2.png" class="thumb">
+          <h3 class="title">Communication <br> Skills</h3>
+          <a href="Communication skills.html" class="inline-btn">view playlist</a>
+        </div>
+      </div>
+</section>      
+<!--1STY 2NDSEM-->
+<section class="courses" id="courses-1sty-2ndsem">
+      <h1 class="heading">1st Year 2nd Semester</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.A.D.K.Fernando</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/fundamental1.jpg" class="thumb">
+          <h3 class="title">Fundamental of Programming</h3>
+          <a href="fundamental-programming.html" class="inline-btn">view playist</a>
+        </div>
+
+         <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3></h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/sad2.jpg" class="thumb">
+          <h3 class="title">Software Analysis & Design</h3>
+          <a href="SAD.html" class="inline-btn">view playist</a>
+        </div>
+
+         <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/sd2.jpg" class="thumb">
+          <h3 class="title">Software Development</h3>
+          <a href="SD.html" class="inline-btn">view playist</a>
+        </div>
+
+         <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/img26.jpeg" class="thumb">
+          <h3 class="title">UI / UX Designing</h3>
+          <a href="UIUX-design.html" class="inline-btn">view playist</a>
+        </div>
+
+         <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/tw3.jpg" class="thumb">
+          <h3 class="title">Technical Writing</h3>
+          <a href="technicalwriting.html" class="inline-btn">view playist</a>
+        </div>
+       </div> 
+</section>       
+
+<!--2NDY 1STSEM-->
+<section class="courses" id="courses-2ndy-1stsem">
+      <h1 class="heading">2nd Year 1st Semester</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.A.D.K.Fernando</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/oop3.webp" class="thumb">
+          <h3 class="title">Object-Oriented Programming</h3>
+          <a href="OOP.html" class="inline-btn">view playist</a>
+        </div>
+
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.A.D.K.Fernando</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/sit1.jpg" class="thumb">
+          <h3 class="title">Statistics For IT</h3>
+          <a href="STATICIT.html" class="inline-btn">view playist</a>
+        </div>
+
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.A.D.K.Fernando</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/DBMS3.jpg" class="thumb">
+          <h3 class="title">DBMS</h3>
+          <a href="PITW.html" class="inline-btn">view playist</a>
+        </div>
+
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.A.D.K.Fernando</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/DSA1.png" class="thumb">
+          <h3 class="title">Data Structure & Algorithms</h3>
+          <a href="DSA.html" class="inline-btn">view playist</a>
+        </div>
+
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.A.D.K.Fernando</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/" class="thumb">
+          <h3 class="title">Information & Computer Security</h3>
+          <a href="ICS.html" class="inline-btn">view playist</a>
+        </div>
+
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.A.D.K.Fernando</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/ICS" class="thumb">
+          <h3 class="title">Operating System</h3>
+          <a href="OS.html" class="inline-btn">view playist</a>
+        </div>
+       </div> 
+</section>       
+
+       <!--2NDY 2NDSEM-->
+<section class="courses" id="courses-2ndy-2ndsem">
+      <h1 class="heading">2ND Year 2ND Semester</h1>
+      <div class="box-container">
+        <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.A.D.K.Fernando</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/EA1 (2).webp" class="thumb">
+          <h3 class="title">Enterprise Architecture</h3>
+          <a href="EA.html" class="inline-btn">view playist</a>
+        </div>
+
+         <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3></h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/BA2.jpg" class="thumb">
+          <h3 class="title">Bussiness Analysis</h3>
+          <a href="BA.html" class="inline-btn">view playist</a>
+        </div>
+
+         <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/sd2.jpg" class="thumb">
+          <h3 class="title">IT Project Management</h3>
+          <a href="ITPM.html" class="inline-btn">view playist</a>
+        </div>
+
+         <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/img26.jpeg" class="thumb">
+          <h3 class="title">Professional IT World</h3>
+          <a href="PITW.html" class="inline-btn">view playist</a>
+        </div>
+
+         <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/machine_learning_image.jpeg" class="thumb">
+          <h3 class="title">Machine Learning</h3>
+          <a href="ML.html" class="inline-btn">view playist</a>
+        </div>
+
+         <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/tw3.jpg" class="thumb">
+          <h3 class="title">Software Quality Assurance</h3>
+          <a href="QA.html" class="inline-btn">view playist</a>
+        </div>
+
+         <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/SE2.jpg" class="thumb">
+          <h3 class="title">Software Engineering</h3>
+          <a href="SE.html" class="inline-btn">view playist</a>
+        </div>
+
+         <div class="box">
+          <div class="tutor">
+            <img src="admin1.jfif" alt="admin1">
+            <div>
+              <h3>MR.</h3>
+              <span>21-02-2022</span>
+            </div>
+          </div>
+          <img src="images/tw3.jpg" class="thumb">
+          <h3 class="title">TComputer Security Management</h3>
+          <a href="CSM.html" class="inline-btn">view playist</a>
+        </div>
+       </div> 
+    </section>
+   
+    <!--courses section ends-->
+    <!---about section start-->
+    <section class="about">
+      <div class="row">
+        <div class="image">
+          <img src="cont1.gif" alt="">
+        </div>
+        <div class="content">
+          <h3>Why choose us?</h3>
+          <p>We are providing LMS for HNDIT students. Its easy to use and learn new things throw the new technology. The students can easy to study Subject Materials and quizes throw our LMS.
+          </p>
+          <a href="courses.html" class="inline-btn">our courses..</a>
+        </div>
+      </div>
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-graduation-cap"></i>
+            <div>
+            <h3>30+</h3>
+            <span>Our Courses</span>
+            </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-user-graduate"></i>
+            <div>
+            <h3>1k</h3>
+            <span>Our Students</span>
+            </div>        
+        </div>
+
+        <div class="box">
+          <i class="fas fa-pen"></i>
+            <div>
+            <h3>20+</h3>
+            <span>Our Past Papers</span>
+            </div>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-chalkboard-user"></i>
+            <div>
+            <h3>10+</h3>
+            <span>Our Lecturers</span>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--about section ends-->
+
+    <!--review section start-->
+    <section class="reviews">
+      <h1 class="heading">Student's review</h1>
+      <div class="box-container">
+        <div class="box">
+          <p>our students review about using LMS, how LMS easy for Acedamic events and Exams.</p>
+          <div class="user">
+            <img src="images/std1.webp" alt="review user image">
+            <div>
+              <h3>fathima zukra</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p>our students review about using LMS, how LMS easy for Acedamic events and Exams.</p>
+          <div class="user">
+            <img src="images/std6.avif" alt="review user image">
+            <div>
+              <h3>zyna mahir</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p>our students review about using LMS, how LMS easy for Acedamic events and Exams.</p>
+          <div class="user">
+            <img src="images/std2.jfif" alt="review user image">
+            <div>
+              <h3>Alice Perera</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p>our students review about using LMS, how LMS easy for Acedamic events and Exams.</p>
+          <div class="user">
+            <img src="images/std4.jfif" alt="review user image">
+            <div>
+              <h3>Tharuka wikramasinghe</h3>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--review section ends-->
+    <button id="chatbot-toggle" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000;">
+     Chat with us
+    </button>
+ 
+
+    <!--footer section start-->
+    <footer class="footer">
+      &copy; copyright @2022 by <span>fathima fahmidha</span> | All rights reserved!
+    </footer>
+    <!--footer section ends-->
+
+
+    <!--cutom js file-->
+    <script src="home.js"></script>
+</body>
+</html>

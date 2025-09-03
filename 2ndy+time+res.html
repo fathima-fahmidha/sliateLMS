@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIATE LMS</title>
+    <link rel="shortcut icon" href="sliate.jfif" type="image/x-icon">
+     <!--CSS-->
+     <link rel="stylesheet" href="homenew.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!----FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+</head>
+<body>
+     <!---header section start-->
+     <header class="header">
+        <section class="flex">
+          <a href="home.html" class="logo">SLIATE LMS</a>
+          <form action="post" class="search-form">
+            <input type="text" name="search_box" placeholder="search courses...." required maxlength="100">
+            <button type="submit" class="fas fa-search" name="search_box"></button>
+          </form>
+          <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+  
+          </div>
+          <div class="profile">
+            <img src="admin1.jfif" alt="user profile">
+            <h3>Fathima Fahmidha</h3>
+            <span>student</span>
+            <a href="prfile.html" class="btn">view profile</a>
+            <div class="flex-btn">
+              <a href="login.html" class="option-btn">Login</a>
+              <a href="register.html" class="option-btn">Register</a>
+            </div> 
+          </div>
+        </section>
+      </header>
+      <!---header section closed-->
+  
+    <!---side bar section start-->
+    <div class="side-bar">
+        <div class="close-side-bar">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="profile">
+          <img src="admin1.jfif" alt="user profile">
+          <h3>Fathima Fahmidha</h3>
+          <span>Student</span>
+          <a href="prfile.html" class="btn">View profile</a>
+        </div>
+       <!--<nav class="navbar">
+          <a href="home.html"><i class="fas fa-home"><span>Home</span></i></a>
+          <a href="about.html"><i class="fas fa-question"><span>About us</span></i></a>
+          <a href="courses.html"><i class="fas fa-graduation-cap"><span>Courses</span></i></a>
+          <a href="teachers.html"><i class="fas fa-chalkboard-user"><span>Teachers</span></i></a>
+          <a href="contact.html"><i class="fas fa-headset"><span>Contact us</span></i></a>
+        </nav>-->
+
+<nav class="navbar">
+  <div class="subject-heading" onclick="toggleSubjects('sem1')">
+    <i class="fas fa-chevron-right"></i> 1st Year - 1st Semester
+  </div>
+  <div class="sub-list" id="sem1">
+    <a href="webdesign.html"><i class="fas fa-code"></i> Web Design</a>
+    <a href="imis.html"><i class="fas fa-database"></i> IMIS</a>
+    <a href="Communicationskills.html"><i class="fas fa-database"></i> Communication Skills</a>
+    <a href="Computer&network.html"><i class="fas fa-database"></i> Computer & Network </a>
+    <a href="Fundamentalprogramming.html"><i class="fas fa-database"></i>Fundamental</a>
+  </div>
+
+  <div class="subject-heading" onclick="toggleSubjects('sem2')">
+    <i class="fas fa-chevron-right"></i> 1st Year - 2nd Semester
+  </div>
+  <div class="sub-list" id="sem2">
+    <a href="programming.html"><i class="fas fa-laptop-code"></i> Programming</a>
+    <a href="dbms.html"><i class="fas fa-database"></i> DBMS</a>
+  </div>
+
+  <div class="subject-heading" onclick="toggleSubjects('sem3')">
+    <i class="fas fa-chevron-right"></i> 2nd Year - 1st Semester
+  </div>
+  <div class="sub-list" id="sem3">
+    <a href="networks.html"><i class="fas fa-network-wired"></i> Computer Networks</a>
+    <a href="software.html"><i class="fas fa-cogs"></i> Software Engineering</a>
+  </div>
+
+  <div class="subject-heading" onclick="toggleSubjects('sem4')">
+    <i class="fas fa-chevron-right"></i> 2nd Year - 2nd Semester
+  </div>
+  <div class="sub-list" id="sem4">
+    <a href="mobile.html"><i class="fas fa-mobile-alt"></i> Mobile App Development</a>
+    <a href="project.html"><i class="fas fa-project-diagram"></i> Final Project</a>
+  </div>
+</nav>
+<a href="home.html"><button>Home</button></a>
+
+
+</div>
+
+      <!---side bar section ends-->
+      <!--playlist section start-->
+      <section class="playlist">
+        <h1 class="heading">1st year time table</h1>
+        <div class="row">
+            <div class="div6">
+               <div class="img">
+                <img src="images/">
+               </div>
+                  <div class="thumb">
+                <div class="sub">
+                  <h2 class="h2" id="pastpaper">2nd year Timetable</h2><br> 
+                </div>  
+                <div class="subname">
+                   <p><a href="images/1st1sttime.pdf">1st semester time table</a></p><br>
+                   <p><a href="images/1st2ndtime.pdf">2nd semester time table</a></p><br>    
+                </div>
+
+                <div class="sub">
+                  <h2 class="h2" id="pastpaper">2nd year Results</h2><br> 
+                </div>  
+                <div class="subname">
+                   <p><a href="images/1st1stres.pdf">1st semester results</a></p><br>
+                   <p><a href="images/1st2ndres.pdf">2nd semester results</a></p><br>    
+                </div>
+
+           
+            </div>  
+        </div>
+      </section>
+      <!--playlist section end-->
+      <!--footer section start-->
+    <footer class="footer">
+        &copy; copyright @2022 by <span>fathima fahmidha</span> | All rights reserved!
+      </footer>
+      <!--footer section ends-->
+  
+  
+      <!--cutom js file-->
+      <script src="lms.js"></script>
+  </body>
+  </html>

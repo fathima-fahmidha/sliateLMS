@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="shortcut icon" href="sliate.jfif" type="image/x-icon">
+    <!----FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+     <!--CSS-->
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <!---header section start-->
+    <header class="header">
+      <section class="flex">
+        <a href="home.html" class="logo">SLIATE LMS</a>
+        <form action="contact.php" class="search-form" method="POST">
+          <input type="text" name="search_box" placeholder="search courses...." required maxlength="100">
+          <button type="submit" class="fas fa-search" name="search_box"></button>
+        </form>
+        <div class="icons">
+          <div id="menu-btn" class="fas fa-bars"></div>
+          <div id="search-btn" class="fas fa-search"></div>
+          <div id="user-btn" class="fas fa-user"></div>
+          <div id="toggle-btn" class="fas fa-sun"></div>
+
+        </div>
+        <div class="profile">
+          <img src="admin1.jfif" alt="user profile">
+          <h3>Fathima Fahmidha</h3>
+          <span>student</span>
+          <a href="prfile.html" class="btn">view profile</a>
+          <div class="flex-btn">
+            <a href="login.html" class="option-btn">Login</a>
+            <a href="register.html" class="option-btn">Register</a>
+          </div> 
+        </div>
+      </section>
+    </header>
+    <!---header section closed-->
+
+    <!---side bar section start-->
+    <div class="side-bar">
+      <div class="close-side-bar">
+        <i class="fas fa-times"></i>
+      </div>
+      <div class="profile">
+        <img src="admin1.jfif" alt="user profile">
+        <h3>Fathima Fahmidha</h3>
+        <span>Student</span>
+        <a href="prfile.html" class="btn">View profile</a>
+      </div>
+      <nav class="navbar">
+        <a href="home.html"><i class="fas fa-home"><span>Home</span></i></a>
+        <a href="about.html"><i class="fas fa-question"><span>About us</span></i></a>
+        <a href="courses.html"><i class="fas fa-graduation-cap"><span>Courses</span></i></a>
+        <a href="teachers.html"><i class="fas fa-chalkboard-user"><span>Teachers</span></i></a>
+        <a href="contact.html"><i class="fas fa-headset"><span>Contact us</span></i></a>
+      </nav>
+
+    </div>
+    <!---side bar section ends-->
+    <!--contact page start-->
+    <section class="contact">
+        <div class="row">
+            <div class="image">
+                <img src="cont1.gif" alt="">
+            </div>
+            <form action="contact.php" method="post">
+                <h3>Get in touch</h3>
+                <input type="text" placeholder="enter your name" required maxlength="100" name="name" class="box">
+                <input type="email" placeholder="enter your email" required maxlength="100" name="email" class="box">
+                <input type="text" placeholder="enter your register number" required maxlength="100" name="regno" class="box">
+                <textarea name="msg" placeholder="enter your message......" cols="30" rows="10" class="box"></textarea>
+                <input type="submit" value="send message" class="inline-btn" name="submit">
+            </form>
+        </div>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>Phone number</h3>
+                <a href="tel:0778123877">0778123877</a>
+                <a href="tel:0786069680">0786069680</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>Email address</h3>
+                <a href="mailto:fahmifathih956@gmail.com">fahmifathih956@gmail.com</a>
+                <a href="mailto:fahmiabu551@gmail.com">fahmiabu551@gmail.com</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>Campus Address</h3>
+                <a href="#">Puttalam road, Pothanegama, Anuradhapura </a>
+            </div>
+        </div>
+    </section>
+    <!--contact page ends-->
+
+
+
+
+
+    <!--footer section start-->
+    <footer class="footer">
+        &copy; copyright @2022 by <span>fathima fahmidha</span> | All rights reserved!
+      </footer>
+      <!--footer section ends-->
+  
+  
+      <!--cutom js file-->
+      <script src="home.js"></script>
+  </body>
+  </html>

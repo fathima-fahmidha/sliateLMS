@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLIATE LMS</title>
+    <link rel="shortcut icon" href="sliate.jfif" type="image/x-icon">
+     <!--CSS-->
+     <link rel="stylesheet" href="homenew.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+     <!----FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />   
+</head>
+<body>
+     <!---header section start-->
+     <header class="header">
+        <section class="flex">
+          <a href="home.html" class="logo">SLIATE LMS</a>
+          <form action="post" class="search-form">
+            <input type="text" name="search_box" placeholder="search courses...." required maxlength="100">
+            <button type="submit" class="fas fa-search" name="search_box"></button>
+          </form>
+          <div class="icons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <div id="user-btn" class="fas fa-user"></div>
+            <div id="toggle-btn" class="fas fa-sun"></div>
+  
+          </div>
+          <div class="profile">
+            <img src="admin1.jfif" alt="user profile">
+            <h3>Fathima Fahmidha</h3>
+            <span>student</span>
+            <a href="prfile.html" class="btn">view profile</a>
+            <div class="flex-btn">
+              <a href="login.html" class="option-btn">Login</a>
+              <a href="register.html" class="option-btn">Register</a>
+            </div> 
+          </div>
+        </section>
+      </header>
+      <!---header section closed-->
+  
+ <!---side bar section start-->
+    <div class="side-bar">
+        <div class="close-side-bar">
+          <i class="fas fa-times"></i>
+        </div>
+        <div class="profile">
+          <img src="admin1.jfif" alt="user profile">
+          <h3>Fathima Fahmidha</h3>
+          <span>Student</span>
+          <a href="prfile.html" class="btn">View profile</a>
+        </div>
+       <!--<nav class="navbar">
+          <a href="home.html"><i class="fas fa-home"><span>Home</span></i></a>
+          <a href="about.html"><i class="fas fa-question"><span>About us</span></i></a>
+          <a href="courses.html"><i class="fas fa-graduation-cap"><span>Courses</span></i></a>
+          <a href="teachers.html"><i class="fas fa-chalkboard-user"><span>Teachers</span></i></a>
+          <a href="contact.html"><i class="fas fa-headset"><span>Contact us</span></i></a>
+        </nav>-->
+
+<nav class="navbar">
+  <div class="subject-heading" onclick="toggleSubjects('sem1')">
+    <i class="fas fa-chevron-right"></i> 1st Year - 1st Semester
+  </div>
+  <div class="sub-list" id="sem1">
+    <a href="webdesign.html"><i class="fas fa-code"></i> Web Design</a>
+    <a href="imis.html"><i class="fas fa-database"></i> IMIS</a>
+    <a href="Communicationskills.html"><i class="fas fa-database"></i> Communication Skills</a>
+    <a href="Computer&network.html"><i class="fas fa-database"></i> Computer & Network </a>
+    <a href="C#.html"><i class="fas fa-database"></i>VB Programming</a>
+  </div>
+
+  <div class="subject-heading" onclick="toggleSubjects('sem2')">
+    <i class="fas fa-chevron-right"></i> 1st Year - 2nd Semester
+  </div>
+  <div class="sub-list" id="sem2">
+    <a href="fundamental-programming.html"><i class="fas fa-laptop-code"></i>Fundamental Programming</a>
+    <a href="SAD.html"><i class="fas fa-database"></i>System Analysis & Design</a>
+    <a href="SD.html"><i class="fas fa-database"></i>System Development</a>
+    <a href="technicalwriting.html"><i class="fas fa-database"></i>technical Writing</a>
+    <a href="UIUX-design.html"><i class="fas fa-database"></i>UI - UX Design Principles</a>
+  </div>
+
+  <div class="subject-heading" onclick="toggleSubjects('sem3')">
+    <i class="fas fa-chevron-right"></i> 2nd Year - 1st Semester
+  </div>
+  <div class="sub-list" id="sem3">
+    <a href="DBMS.html"><i class="fas fa-network-wired"></i>Computer Networks</a>
+    <a href="STATICIT.html"><i class="fas fa-cogs"></i>Statictics For IT</a>
+    <a href="DSA.html"><i class="fas fa-cogs"></i>Data Structure & Algorithms</a>
+    <a href="OOP.html"><i class="fas fa-cogs"></i>Object-Oriented Programming</a>
+    <a href="ICS.html"><i class="fas fa-cogs"></i>Information & Computer Security</a>
+    <a href="OS.html"><i class="fas fa-cogs"></i>Operating System</a>
+  </div>
+
+  <div class="subject-heading" onclick="toggleSubjects('sem4')">
+    <i class="fas fa-chevron-right"></i> 2nd Year - 2nd Semester
+  </div>
+  <div class="sub-list" id="sem4">
+    <a href="EA.html"><i class="fas fa-mobile-alt"></i>Enterprise Architecture</a>
+    <a href="BA.html"><i class="fas fa-project-diagram"></i>Bussiness Analysis</a>
+    <a href="PITW.html"><i class="fas fa-project-diagram"></i>Professional IT World</a>
+    <a href="ITPM.html"><i class="fas fa-project-diagram"></i>IT Project Management</a>
+    <a href="ML.html"><i class="fas fa-project-diagram"></i>Machine Learning</a>
+    <a href="CSM.html"><i class="fas fa-project-diagram"></i>Coputer Security Management</a>
+    <a href="QA.html"><i class="fas fa-project-diagram"></i>Software Quality Assurance</a>
+    <a href="SE.html"><i class="fas fa-project-diagram"></i>Software Engineering</a>
+  </div>
+</nav>
+<a href="home.html"><button>Home</button></a>
+</div>
+
+      <!---side bar section ends-->
+      <!--playlist section start-->
+      <section class="playlist">
+        <h1 class="heading">Fundamental Of Programming</h1>
+        <div class="row">
+            <div class="div6">
+               <div class="img">
+                <img src="images/fundamental1.jpg">
+               </div>
+                <div class="thumb">
+                <div class="sub">
+                  <h2 class="h2" id="pastpaper">WEEK NOTES</h2><br> 
+                </div>  
+                <div class="subname">
+                <p><a href="week1 fundamental of programming.pptx"><i class='bx bx-slideshow'>Introduction</i></a></p><br>
+                <p><a href="week2 fundamental of programming.pptx"><i class='bx bx-slideshow'>NETbeans IDE</i></a></p><br>
+                <p><a href="week3 fundamental of programming.pptx"><i class='bx bx-slideshow'>Varieable and data types</i></a></p><br>
+                <p><a href="week4 fundamental of programming.pptx"><i class='bx bx-slideshow'>Expression & methodsx</i></a></p><br>
+                <p><a href="week5 fundamental of programming.pptx"><i class='bx bx-slideshow'>Java control structure</i></a></p><br>
+                <p><a href="week6 fundamental of programming.pptx"><i class='bx bx-slideshow'>Arrays</i></a></p><br>
+                <p><a href="week7 fundamental of programming.pptx"><i class='bx bx-slideshow'>methods declaring in java</i></a></p><br>
+                <p><a href="week8 fundamental of programming.pptx"><i class='bx bx-slideshow'>access modifier in Java</i></a></p><br>
+              </div>
+            </div>
+            <div class="sub">
+               <h2 class="h2" id="pastpaper">PAST PAPER</h2><br> 
+            </div>  
+            <div class="subname">
+               <p><a href="past paper1 fun.pdf"><i class='bx bxs-note'>past paper 1</i></a></p><br>
+               <p><a href="past paper2 .pdf"><i class='bx bxs-note'>past paper 2</i></a></p>
+            </div>
+            <div class="sub">
+              <h2 class="h2" id="modelpaper">MODEL PAPAER</h2><br> 
+            </div>   
+            <div class="subname">
+             <p><a href="model paper1 IMIS.pdf"><i class='bx bxs-note'>model paper 1</i></a></p><br>
+             <p><a href="model paper2 IMIS.pdf"><i class='bx bxs-note'>model paper 2</i></a></p>
+            </div>     
+          
+              
+            <div class="sub">
+              <h2 class="h2" id="vedios">VEDIO</h2><br> 
+            </div>   
+           <div class="subname">
+             <p><a href="https://www.youtube.com/watch?v=zOjov-2OZ0E"><i class='bx bxl-youtube'></i>what is the concept of programming?</i></a></p><br>
+             <p><a href="https://www.youtube.com/watch?v=eIrMbAQSU34"><i class='bx bxl-youtube'>java tutorilas</i></a></p>
+           </div>    
+        </div>
+      </section>
+      <!--playlist section end-->
+      <!--footer section start-->
+    <footer class="footer">
+        &copy; copyright @2022 by <span>fathima fahmidha</span> | All rights reserved!
+      </footer>
+      <!--footer section ends-->
+  
+  
+      <!--cutom js file-->
+      <script src="lms.js"></script>
+  </body>
+  </html>
